@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
 import nltk
-nltk.download('stopwords')
+# nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 def preprocess_text(text):
@@ -78,7 +78,7 @@ def analyze_sentiments(texts, mode='sep'):
     return results
 
 # Load the tokenizer and model
-print("Loading FinBERT model...")
+# print("Loading FinBERT model...")
 tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert")
 model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert")
 
